@@ -13,6 +13,13 @@
 		7711CDF71A7E815C005851A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7711CDF61A7E815C005851A0 /* Images.xcassets */; };
 		7711CDFA1A7E815C005851A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7711CDF81A7E815C005851A0 /* LaunchScreen.xib */; };
 		7711CE061A7E815C005851A0 /* WorldVisitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711CE051A7E815C005851A0 /* WorldVisitorTests.swift */; };
+		77AE9CC21A86F62B00D2AC2F /* worldmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */; };
+		77AE9CC91A86FB2500D2AC2F /* dice1.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC31A86FB2500D2AC2F /* dice1.png */; };
+		77AE9CCA1A86FB2500D2AC2F /* dice2.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC41A86FB2500D2AC2F /* dice2.png */; };
+		77AE9CCB1A86FB2500D2AC2F /* dice3.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC51A86FB2500D2AC2F /* dice3.png */; };
+		77AE9CCC1A86FB2500D2AC2F /* dice4.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC61A86FB2500D2AC2F /* dice4.png */; };
+		77AE9CCD1A86FB2500D2AC2F /* dice5.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC71A86FB2500D2AC2F /* dice5.png */; };
+		77AE9CCE1A86FB2500D2AC2F /* dice6.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC81A86FB2500D2AC2F /* dice6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		7711CDFF1A7E815C005851A0 /* WorldVisitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldVisitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7711CE041A7E815C005851A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7711CE051A7E815C005851A0 /* WorldVisitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldVisitorTests.swift; sourceTree = "<group>"; };
+		77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worldmap.jpg; sourceTree = "<group>"; };
+		77AE9CC31A86FB2500D2AC2F /* dice1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice1.png; sourceTree = "<group>"; };
+		77AE9CC41A86FB2500D2AC2F /* dice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice2.png; sourceTree = "<group>"; };
+		77AE9CC51A86FB2500D2AC2F /* dice3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice3.png; sourceTree = "<group>"; };
+		77AE9CC61A86FB2500D2AC2F /* dice4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice4.png; sourceTree = "<group>"; };
+		77AE9CC71A86FB2500D2AC2F /* dice5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice5.png; sourceTree = "<group>"; };
+		77AE9CC81A86FB2500D2AC2F /* dice6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice6.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +96,7 @@
 				7711CDF31A7E815C005851A0 /* Main.storyboard */,
 				7711CDF61A7E815C005851A0 /* Images.xcassets */,
 				7711CDF81A7E815C005851A0 /* LaunchScreen.xib */,
+				77AE9CC01A86F50D00D2AC2F /* images */,
 				7711CDED1A7E815C005851A0 /* Supporting Files */,
 			);
 			path = WorldVisitor;
@@ -110,6 +125,20 @@
 				7711CE041A7E815C005851A0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77AE9CC01A86F50D00D2AC2F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				77AE9CC31A86FB2500D2AC2F /* dice1.png */,
+				77AE9CC41A86FB2500D2AC2F /* dice2.png */,
+				77AE9CC51A86FB2500D2AC2F /* dice3.png */,
+				77AE9CC61A86FB2500D2AC2F /* dice4.png */,
+				77AE9CC71A86FB2500D2AC2F /* dice5.png */,
+				77AE9CC81A86FB2500D2AC2F /* dice6.png */,
+				77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,8 +222,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7711CDF51A7E815C005851A0 /* Main.storyboard in Resources */,
+				77AE9CCA1A86FB2500D2AC2F /* dice2.png in Resources */,
+				77AE9CCB1A86FB2500D2AC2F /* dice3.png in Resources */,
+				77AE9CC21A86F62B00D2AC2F /* worldmap.jpg in Resources */,
 				7711CDFA1A7E815C005851A0 /* LaunchScreen.xib in Resources */,
+				77AE9CCC1A86FB2500D2AC2F /* dice4.png in Resources */,
 				7711CDF71A7E815C005851A0 /* Images.xcassets in Resources */,
+				77AE9CCD1A86FB2500D2AC2F /* dice5.png in Resources */,
+				77AE9CC91A86FB2500D2AC2F /* dice1.png in Resources */,
+				77AE9CCE1A86FB2500D2AC2F /* dice6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WorldVisitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WorldVisitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +443,7 @@
 				7711CE0B1A7E815C005851A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7711CE0C1A7E815C005851A0 /* Build configuration list for PBXNativeTarget "WorldVisitorTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +452,7 @@
 				7711CE0E1A7E815C005851A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
