@@ -13,6 +13,7 @@ class DiceRollViewController: UIViewController
     @IBOutlet weak var rollButton: UIButton!
     @IBOutlet weak var secondDieImage: UIImageView!
     @IBOutlet weak var firstDieImage: UIImageView!
+    @IBOutlet weak var gotoCountryButton: UIButton!
     
     var countryRolled = Country()
 
@@ -73,6 +74,8 @@ class DiceRollViewController: UIViewController
         countryRolled = determineCountryBasedOnRoll(dieTotal)
         
         println("Country to visit: \(countryRolled.getCountryName())")
+        
+        gotoCountryButton.setTitle("Go to \(countryRolled.getCountryName())", forState: .Normal)
     }
     
     
