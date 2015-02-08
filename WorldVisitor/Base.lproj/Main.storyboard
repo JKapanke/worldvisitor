@@ -46,7 +46,7 @@
         <!--RollDice-->
         <scene sceneID="hTv-fa-9Ce">
             <objects>
-                <viewController id="V3e-us-7W7" userLabel="RollDice" sceneMemberID="viewController">
+                <viewController id="V3e-us-7W7" userLabel="RollDice" customClass="DiceRollViewController" customModule="WorldVisitor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PxJ-49-Ub0"/>
                         <viewControllerLayoutGuide type="bottom" id="fxS-ae-X8p"/>
@@ -67,13 +67,69 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNE-vx-Yj6">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjl-dp-kVt">
-                                <rect key="frame" x="107" y="439" width="209" height="41"/>
+                                <rect key="frame" x="103" y="380" width="209" height="41"/>
                                 <state key="normal" title="Roll Dice!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollButtonAction:" destination="V3e-us-7W7" eventType="touchUpInside" id="kzF-bG-Ncu"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNE-vx-Yj6">
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="firstDieImage" destination="QAd-0W-XX9" id="cfz-hS-1EB"/>
+                        <outlet property="rollButton" destination="fjl-dp-kVt" id="fsP-v0-rA2"/>
+                        <outlet property="secondDieImage" destination="ICF-Fl-hXr" id="eOr-Xc-kgn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDk-We-y10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-124"/>
+        </scene>
+        <!--Country View Controller-->
+        <scene sceneID="Opq-Ja-CYz">
+            <objects>
+                <viewController id="QV9-2P-vxE" customClass="CountryViewController" customModule="WorldVisitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N1m-1T-gLB"/>
+                        <viewControllerLayoutGuide type="bottom" id="BbO-sz-StD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xYd-FU-SLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0WU-JK-xP5">
+                                <rect key="frame" x="83" y="139" width="249" height="180"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome To " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1l-uP-GPS">
+                                <rect key="frame" x="16" y="58" width="382" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jk-df-CeQ">
+                                <rect key="frame" x="83" y="434" width="249" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIN-YZ-qg0">
+                                <rect key="frame" x="83" y="516" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PU-Na-LB3">
+                                <rect key="frame" x="83" y="590" width="249" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -82,10 +138,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="dynamicActivityOne" destination="7Jk-df-CeQ" id="6xq-4v-JtT"/>
+                        <outlet property="dynamicActivityThree" destination="7PU-Na-LB3" id="aHp-le-EQ2"/>
+                        <outlet property="dynamicActivityTwo" destination="yIN-YZ-qg0" id="Bmb-65-IWn"/>
+                        <outlet property="dynamicLabel" destination="f1l-uP-GPS" id="qS2-QY-LMH"/>
+                        <outlet property="dynamicMap" destination="0WU-JK-xP5" id="iSu-PE-igd"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MDk-We-y10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUZ-6q-wrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="-124"/>
+            <point key="canvasLocation" x="648" y="-124"/>
         </scene>
     </scenes>
     <resources>

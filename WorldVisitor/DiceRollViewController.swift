@@ -47,7 +47,7 @@ class DiceRollViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+   
     @IBAction func rollButtonAction(sender: UIButton)
     {
         let firstDie =  Dice()

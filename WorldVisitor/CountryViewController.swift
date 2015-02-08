@@ -10,12 +10,12 @@ import UIKit
 
 class CountryViewController: UIViewController
 {
-    @IBOutlet weak var dynamicLabel: UILabel!
     @IBOutlet weak var typeOfCountry: AnyObject!
 
+    @IBOutlet weak var dynamicLabel: UILabel!
     @IBOutlet weak var dynamicMap: UIImageView!
     @IBOutlet weak var dynamicActivityOne: UILabel!
-    @IBOutlet weak var dynamicActivtyTwo: UILabel!
+    @IBOutlet weak var dynamicActivityTwo: UILabel!
     @IBOutlet weak var dynamicActivityThree: UILabel!
 
     override func viewDidLoad()
@@ -34,7 +34,7 @@ class CountryViewController: UIViewController
         
         //set the activities
         dynamicActivityOne.text = currentCountry.getFirstActivity().getActivityName()
-        dynamicActivtyTwo.text = currentCountry.getSecondActivity().getActivityName()
+        dynamicActivityTwo.text = currentCountry.getSecondActivity().getActivityName()
         dynamicActivityThree.text = currentCountry.getThirdActivity().getActivityName()
         
         // Do any additional setup after loading the view.
