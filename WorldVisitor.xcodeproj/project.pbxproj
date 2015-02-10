@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		7711CDF01A7E815C005851A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711CDEF1A7E815C005851A0 /* AppDelegate.swift */; };
 		7711CDF21A7E815C005851A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711CDF11A7E815C005851A0 /* ViewController.swift */; };
-		7711CDF51A7E815C005851A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7711CDF31A7E815C005851A0 /* Main.storyboard */; };
 		7711CDF71A7E815C005851A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7711CDF61A7E815C005851A0 /* Images.xcassets */; };
 		7711CDFA1A7E815C005851A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7711CDF81A7E815C005851A0 /* LaunchScreen.xib */; };
 		7711CE061A7E815C005851A0 /* WorldVisitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711CE051A7E815C005851A0 /* WorldVisitorTests.swift */; };
+		7740B6961A89AEAC00F6C8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740B6941A89AEAC00F6C8D3 /* Main.storyboard */; };
 		77AE9CC21A86F62B00D2AC2F /* worldmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */; };
 		77AE9CC91A86FB2500D2AC2F /* dice1.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC31A86FB2500D2AC2F /* dice1.png */; };
 		77AE9CCA1A86FB2500D2AC2F /* dice2.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC41A86FB2500D2AC2F /* dice2.png */; };
@@ -54,12 +54,12 @@
 		7711CDEE1A7E815C005851A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7711CDEF1A7E815C005851A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7711CDF11A7E815C005851A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7711CDF41A7E815C005851A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7711CDF61A7E815C005851A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7711CDF91A7E815C005851A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7711CDFF1A7E815C005851A0 /* WorldVisitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldVisitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7711CE041A7E815C005851A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7711CE051A7E815C005851A0 /* WorldVisitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldVisitorTests.swift; sourceTree = "<group>"; };
+		7740B6951A89AEAC00F6C8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worldmap.jpg; sourceTree = "<group>"; };
 		77AE9CC31A86FB2500D2AC2F /* dice1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice1.png; sourceTree = "<group>"; };
 		77AE9CC41A86FB2500D2AC2F /* dice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice2.png; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 				77AE9CCF1A86FE9E00D2AC2F /* Activity.swift */,
 				77AE9CD01A86FE9E00D2AC2F /* ActivityViewController.swift */,
 				7711CDEF1A7E815C005851A0 /* AppDelegate.swift */,
+				7740B6941A89AEAC00F6C8D3 /* Main.storyboard */,
 				7711CDF11A7E815C005851A0 /* ViewController.swift */,
-				7711CDF31A7E815C005851A0 /* Main.storyboard */,
 				7711CDF61A7E815C005851A0 /* Images.xcassets */,
 				7711CDF81A7E815C005851A0 /* LaunchScreen.xib */,
 				77AE9CF21A8704EE00D2AC2F /* countries */,
@@ -288,7 +288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7711CDF51A7E815C005851A0 /* Main.storyboard in Resources */,
 				77AE9CDF1A86FEB500D2AC2F /* brazil.jpg in Resources */,
 				77AE9CEB1A87001E00D2AC2F /* india.jpg in Resources */,
 				77AE9CCA1A86FB2500D2AC2F /* dice2.png in Resources */,
@@ -300,6 +299,7 @@
 				7711CDF71A7E815C005851A0 /* Images.xcassets in Resources */,
 				77AE9CF11A8704D100D2AC2F /* diceShake.wav in Resources */,
 				77AE9CCD1A86FB2500D2AC2F /* dice5.png in Resources */,
+				7740B6961A89AEAC00F6C8D3 /* Main.storyboard in Resources */,
 				77AE9CD51A86FE9E00D2AC2F /* australia.jpg in Resources */,
 				77AE9CC91A86FB2500D2AC2F /* dice1.png in Resources */,
 				77AE9CCE1A86FB2500D2AC2F /* dice6.png in Resources */,
@@ -356,20 +356,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7711CDF31A7E815C005851A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7711CDF41A7E815C005851A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7711CDF81A7E815C005851A0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7711CDF91A7E815C005851A0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7740B6941A89AEAC00F6C8D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7740B6951A89AEAC00F6C8D3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var worldMapSwipeRec: UISwipeGestureRecognizer!
     @IBOutlet weak var swipeView: UIView!
     let swipeRec = UISwipeGestureRecognizer()
 
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
         let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the swipe view", preferredStyle: UIAlertControllerStyle.Alert)
         tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
         self.presentViewController(tapAlert, animated: true, completion: nil)
+        
     }
 
 
