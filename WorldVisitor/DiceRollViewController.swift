@@ -75,7 +75,7 @@ class DiceRollViewController: UIViewController
         
         println("Country to visit: \(countryRolled.getCountryName())")
         
-        gotoCountryButton.setTitle("Go to \(countryRolled.getCountryName())", forState: .Normal)
+        gotoCountryButton.setTitle("Swipe Right to go to \(countryRolled.getCountryName())", forState: .Normal)
     }
     
     

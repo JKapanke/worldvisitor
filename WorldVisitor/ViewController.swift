@@ -10,16 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var worldMapSwipeRec: UISwipeGestureRecognizer!
-    @IBOutlet weak var swipeView: UIView!
-    let swipeRec = UISwipeGestureRecognizer()
+    //@IBOutlet var worldMapSwipeRec: UISwipeGestureRecognizer!
+    //@IBOutlet weak var swipeView: UIView!
+    //let swipeRec = UISwipeGestureRecognizer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        swipeRec.addTarget(self, action: "swipedView")
-        swipeView.addGestureRecognizer(swipeRec)
-        swipeView.userInteractionEnabled = true
+        
+        //TODO Remove as part of cleanup
+        //swipeRec.addTarget(self, action: "swipedView")
+        //swipeView.addGestureRecognizer(swipeRec)
+        //swipeView.userInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //TODO remove
+    //TODO remove as part of cleanup
     func swipedView(){
         let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the swipe view", preferredStyle: UIAlertControllerStyle.Alert)
         tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))

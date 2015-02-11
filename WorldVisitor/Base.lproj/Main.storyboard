@@ -28,19 +28,15 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqU-oC-zy6">
                                 <rect key="frame" x="55" y="550" width="298" height="58"/>
-                                <state key="normal" title="Play">
+                                <state key="normal" title="Swipe to Start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="V3e-us-7W7" kind="show" id="pOa-Pd-NEW"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOR-lt-XNn">
-                                <rect key="frame" x="72" y="363" width="271" height="165"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2p-oB-3oa" userLabel="viewToSwipe">
-                                <rect key="frame" x="55" y="190" width="304" height="155"/>
+                                <rect key="frame" x="55" y="106" width="328" height="436"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -52,9 +48,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="jbW-J9-tKJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="swipeView" destination="LOR-lt-XNn" id="Jbv-Xf-cZq"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="jEf-6G-p1y">
@@ -108,8 +101,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjl-dp-kVt">
-                                <rect key="frame" x="103" y="380" width="209" height="41"/>
-                                <state key="normal" title="Roll Dice!">
+                                <rect key="frame" x="52" y="160" width="324" height="323"/>
+                                <state key="normal" title="Tap to Roll Dice!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -117,11 +110,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C05-MR-qc9">
-                                <rect key="frame" x="47" y="501" width="329" height="30"/>
-                                <state key="normal" title="Go to &lt;SomeCountry>">
+                                <rect key="frame" x="47" y="501" width="329" height="179"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Swipe Right to go to &lt;SomeCountry>">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <outletCollection property="gestureRecognizers" destination="9SS-Fg-OuS" appends="YES" id="yi2-0L-AT2"/>
                                     <segue destination="QV9-2P-vxE" kind="show" identifier="toCountrySegue" id="XVP-aS-E36"/>
                                 </connections>
                             </button>
@@ -140,6 +135,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDk-We-y10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="9SS-Fg-OuS">
+                    <connections>
+                        <segue destination="QV9-2P-vxE" kind="show" identifier="toCountrySegue" id="DV3-3V-DcH"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-23" y="-124"/>
         </scene>
@@ -244,6 +244,7 @@
         <image name="worldmap.jpg" width="301" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="DV3-3V-DcH"/>
         <segue reference="pOa-Pd-NEW"/>
     </inferredMetricsTieBreakers>
 </document>
