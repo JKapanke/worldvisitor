@@ -117,7 +117,7 @@
                                 </state>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="9SS-Fg-OuS" appends="YES" id="yi2-0L-AT2"/>
-                                    <segue destination="QV9-2P-vxE" kind="show" identifier="toCountrySegue" id="XVP-aS-E36"/>
+                                    <segue destination="QV9-2P-vxE" kind="show" identifier="toCountrySegue2" id="XVP-aS-E36"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ICF-Fl-hXr">
@@ -155,33 +155,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0WU-JK-xP5">
-                                <rect key="frame" x="83" y="139" width="249" height="180"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome To " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1l-uP-GPS">
                                 <rect key="frame" x="16" y="58" width="382" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jk-df-CeQ">
+                                <rect key="frame" x="83" y="420" width="249" height="46"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIN-YZ-qg0">
                                 <rect key="frame" x="83" y="516" width="249" height="21"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PU-Na-LB3">
                                 <rect key="frame" x="83" y="590" width="249" height="21"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jk-df-CeQ">
-                                <rect key="frame" x="83" y="434" width="249" height="46"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0WU-JK-xP5">
+                                <rect key="frame" x="62" y="135" width="291" height="178"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ky1-Iw-dmv">
+                                <rect key="frame" x="104" y="169" width="207" height="368"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Aiz-Yx-VsP" appends="YES" id="2Lv-gx-XK1"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -195,47 +206,55 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUZ-6q-wrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Aiz-Yx-VsP">
+                    <connections>
+                        <segue destination="6Se-VA-fmo" kind="show" id="PMR-6f-4ZZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="648" y="-124"/>
+            <point key="canvasLocation" x="700" y="-124"/>
         </scene>
         <!--Activity View Controller-->
-        <scene sceneID="uPt-i3-4ed">
+        <scene sceneID="Y2T-WX-xdG">
             <objects>
-                <viewController id="l0N-VN-3NN" customClass="ActivityViewController" customModule="WorldVisitor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Se-VA-fmo" userLabel="Activity View Controller" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BB2-5L-Dqf"/>
-                        <viewControllerLayoutGuide type="bottom" id="7gZ-Rz-fJ2"/>
+                        <viewControllerLayoutGuide type="top" id="ISB-Wu-TqK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ge0-LS-Jsq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HLF-H4-qwD">
+                    <view key="view" contentMode="scaleToFill" id="JNt-U0-d4U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's do the Activity of: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5R-AX-v5P">
-                                <rect key="frame" x="54" y="64" width="328" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1M-me-ru5">
-                                <rect key="frame" x="163" y="143" width="111" height="30"/>
-                                <state key="normal" title="Start Activity">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe Label Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-lk-j9V">
-                                <rect key="frame" x="126" y="322" width="185" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wl3-7c-Rxi" userLabel="swipeView">
+                                <rect key="frame" x="30" y="-128" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="60Y-Ku-MI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEo-3F-2xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1277" y="-124"/>
+            <point key="canvasLocation" x="1309" y="-124"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c9T-TX-QAf">
+            <objects>
+                <viewController id="mI5-bY-bFU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="73t-SI-XWQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1yb-sx-Lw2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Qy-1F-0Z5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4p-ak-Ykt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
@@ -244,7 +263,7 @@
         <image name="worldmap.jpg" width="301" height="167"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DV3-3V-DcH"/>
         <segue reference="pOa-Pd-NEW"/>
+        <segue reference="XVP-aS-E36"/>
     </inferredMetricsTieBreakers>
 </document>

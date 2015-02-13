@@ -37,6 +37,9 @@ class CountryViewController: UIViewController
         dynamicActivityTwo.text = currentCountry.getSecondActivity().getActivityName()
         dynamicActivityThree.text = currentCountry.getThirdActivity().getActivityName()
         
+        //TODO select the activity to pass along to the Activity page
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -53,8 +56,8 @@ class CountryViewController: UIViewController
         //the segue must be named as noted in the operator
         if (segue.identifier == "toActivitySegue")
         {
-            //var cvc = segue.destinationViewController as ActivityViewController;
-            //cvc.incomingCountryName = countryRolled
+            var cvc = segue.destinationViewController as ActivityViewController;
+            cvc.incomingActivitySelected = dynamicActivityOne
         }
     }
 
