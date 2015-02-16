@@ -20,10 +20,10 @@ class ActivityViewController: UIViewController
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //TODO Remove as part of cleanup
-        swipeRec.addTarget(self, action: "swipedView")
-        swipeView.addGestureRecognizer(swipeRec)
-        swipeView.userInteractionEnabled = true
+        var selectedActivity = incomingActivitySelected as Activity
+        
+        
+
     }
 
     override func didReceiveMemoryWarning()
@@ -43,13 +43,6 @@ class ActivityViewController: UIViewController
         }
     }
 
-    
-    //TODO remove as part of cleanup
-    func swipedView(){
-        let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped the swipe view", preferredStyle: UIAlertControllerStyle.Alert)
-        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        self.presentViewController(tapAlert, animated: true, completion: nil)
-        
-    }
+
 
 }

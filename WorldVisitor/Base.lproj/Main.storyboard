@@ -185,12 +185,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0WU-JK-xP5">
                                 <rect key="frame" x="62" y="135" width="291" height="178"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ky1-Iw-dmv">
-                                <rect key="frame" x="104" y="169" width="207" height="368"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nzb-HR-fRZ" userLabel="ViewToHandleSwipes">
+                                <rect key="frame" x="30" y="321" width="350" height="368"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Aiz-Yx-VsP" appends="YES" id="2Lv-gx-XK1"/>
+                                    <outletCollection property="gestureRecognizers" destination="HtK-IB-gC0" appends="YES" id="BBD-Ax-cMJ"/>
+                                    <outletCollection property="gestureRecognizers" destination="uVW-zR-6yd" appends="YES" id="QWH-0E-Kin"/>
+                                    <outletCollection property="gestureRecognizers" destination="JAv-TU-ZzK" appends="YES" id="e36-gy-FCj"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -203,14 +205,15 @@
                         <outlet property="dynamicActivityTwo" destination="yIN-YZ-qg0" id="Bmb-65-IWn"/>
                         <outlet property="dynamicLabel" destination="f1l-uP-GPS" id="qS2-QY-LMH"/>
                         <outlet property="dynamicMap" destination="0WU-JK-xP5" id="iSu-PE-igd"/>
+                        <outlet property="swipeDownGestureRecog" destination="JAv-TU-ZzK" id="ete-6p-uNg"/>
+                        <outlet property="swipeLeftGestureRecog" destination="uVW-zR-6yd" id="Vew-J4-d9U"/>
+                        <outlet property="swipeRightGestureRecog" destination="HtK-IB-gC0" id="Zt8-Mf-vRD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUZ-6q-wrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Aiz-Yx-VsP">
-                    <connections>
-                        <segue destination="6Se-VA-fmo" kind="show" id="PMR-6f-4ZZ"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="HtK-IB-gC0" userLabel="SwipeRightGesture Recognizer"/>
+                <swipeGestureRecognizer direction="left" id="uVW-zR-6yd" userLabel="SwipeLeft Gesture Recognizer"/>
+                <swipeGestureRecognizer direction="down" id="JAv-TU-ZzK" userLabel="SwipeDown Gesture Recognizer"/>
             </objects>
             <point key="canvasLocation" x="700" y="-124"/>
         </scene>
@@ -226,10 +229,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wl3-7c-Rxi" userLabel="swipeView">
-                                <rect key="frame" x="30" y="-128" width="414" height="736"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPL-Yh-DoT">
+                                <rect key="frame" x="76" y="233" width="223" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -238,23 +243,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEo-3F-2xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1309" y="-124"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="c9T-TX-QAf">
-            <objects>
-                <viewController id="mI5-bY-bFU" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="73t-SI-XWQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="1yb-sx-Lw2"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9Qy-1F-0Z5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a4p-ak-Ykt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>

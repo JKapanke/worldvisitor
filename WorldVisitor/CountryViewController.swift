@@ -11,12 +11,16 @@ import UIKit
 class CountryViewController: UIViewController
 {
     @IBOutlet weak var typeOfCountry: AnyObject!
-
     @IBOutlet weak var dynamicLabel: UILabel!
     @IBOutlet weak var dynamicMap: UIImageView!
     @IBOutlet weak var dynamicActivityOne: UILabel!
     @IBOutlet weak var dynamicActivityTwo: UILabel!
     @IBOutlet weak var dynamicActivityThree: UILabel!
+    @IBOutlet var swipeRightGestureRecog: UISwipeGestureRecognizer!
+    @IBOutlet var swipeLeftGestureRecog: UISwipeGestureRecognizer!
+    @IBOutlet var swipeDownGestureRecog: UISwipeGestureRecognizer!
+    
+    var selectedActivity: Activity!
 
     override func viewDidLoad()
     {
@@ -33,9 +37,15 @@ class CountryViewController: UIViewController
         dynamicMap.image = currentCountry.getMapImage()
         
         //set the activities
-        dynamicActivityOne.text = currentCountry.getFirstActivity().getActivityName()
-        dynamicActivityTwo.text = currentCountry.getSecondActivity().getActivityName()
-        dynamicActivityThree.text = currentCountry.getThirdActivity().getActivityName()
+        dynamicActivityOne.text = "Swipe Right to " + currentCountry.getFirstActivity().getActivityName()
+        dynamicActivityTwo.text = "Swipe Left to " + currentCountry.getSecondActivity().getActivityName()
+        dynamicActivityThree.text = "Swipe Down to " + currentCountry.getThirdActivity().getActivityName()
+        
+        swipeRightGestureRecog.addTarget(self, action: "swipedRightAction")
+        swipeLeftGestureRecog.addTarget(self, action: "swipedLeftAction")
+        swipeDownGestureRecog.addTarget(self, action: "swipedDownAction")
+        //swipeRightGestureRecog.addGestureRecognizer(swipeRec)
+        //swipeRightGestureRecog.userInteractionEnabled = true
         
         //TODO select the activity to pass along to the Activity page
         
@@ -57,9 +67,35 @@ class CountryViewController: UIViewController
         if (segue.identifier == "toActivitySegue")
         {
             var cvc = segue.destinationViewController as ActivityViewController;
-            cvc.incomingActivitySelected = dynamicActivityOne
+            cvc.incomingActivitySelected = selectedActivity
         }
     }
-
+    
+    
+    
+    //TODO remove as part of cleanup
+    func swipedRightAction(){
+        let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the right", preferredStyle: UIAlertControllerStyle.Alert)
+        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
+        self.presentViewController(tapAlert, animated: true, completion: nil)
+        selectedActivity = (typeOfCountry as Country).getFirstActivity()
+        
+    }
+    
+    func swipedLeftAction(){
+        let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the left", preferredStyle: UIAlertControllerStyle.Alert)
+        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
+        self.presentViewController(tapAlert, animated: true, completion: nil)
+        selectedActivity = (typeOfCountry as Country).getSecondActivity()
+        
+    }
+    
+    func swipedDownAction(){
+        let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the down", preferredStyle: UIAlertControllerStyle.Alert)
+        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
+        self.presentViewController(tapAlert, animated: true, completion: nil)
+        selectedActivity = (typeOfCountry as Country).getThirdActivity()
+        
+    }
 }
 
