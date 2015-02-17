@@ -11,9 +11,7 @@ import UIKit
 class ActivityViewController: UIViewController
 {
     var incomingActivitySelected: AnyObject!
-    @IBOutlet var worldMapSwipeRec: UISwipeGestureRecognizer!
-    @IBOutlet weak var swipeView: UIView!
-    let swipeRec = UISwipeGestureRecognizer()
+    @IBOutlet weak var selectedActivityLabel: UILabel!
     
     override func viewDidLoad()
     {
@@ -21,9 +19,7 @@ class ActivityViewController: UIViewController
         // Do any additional setup after loading the view.
         
         var selectedActivity = incomingActivitySelected as Activity
-        
-        
-
+        selectedActivityLabel.text = "You have selected to " + selectedActivity.getActivityName()
     }
 
     override func didReceiveMemoryWarning()
@@ -32,17 +28,6 @@ class ActivityViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-    // prepare for seque
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
-    {
-        //the segue must be named as noted in the operator
-        if (segue.identifier == "toSelectedActivitySegue")
-        {
-            //var cvc = segue.destinationViewController as ActivityViewController;
-            //cvc.incomingCountryName = countryRolled
-        }
-    }
-
 
 
 }

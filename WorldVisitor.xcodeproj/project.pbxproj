@@ -13,6 +13,7 @@
 		7711CDFA1A7E815C005851A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7711CDF81A7E815C005851A0 /* LaunchScreen.xib */; };
 		7711CE061A7E815C005851A0 /* WorldVisitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711CE051A7E815C005851A0 /* WorldVisitorTests.swift */; };
 		7740B6961A89AEAC00F6C8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740B6941A89AEAC00F6C8D3 /* Main.storyboard */; };
+		77700E8C1A92E1EB00D7651C /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77700E8B1A92E1EB00D7651C /* ActivityViewController.swift */; };
 		77AE9CC21A86F62B00D2AC2F /* worldmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */; };
 		77AE9CC91A86FB2500D2AC2F /* dice1.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC31A86FB2500D2AC2F /* dice1.png */; };
 		77AE9CCA1A86FB2500D2AC2F /* dice2.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC41A86FB2500D2AC2F /* dice2.png */; };
@@ -21,7 +22,6 @@
 		77AE9CCD1A86FB2500D2AC2F /* dice5.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC71A86FB2500D2AC2F /* dice5.png */; };
 		77AE9CCE1A86FB2500D2AC2F /* dice6.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC81A86FB2500D2AC2F /* dice6.png */; };
 		77AE9CD31A86FE9E00D2AC2F /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AE9CCF1A86FE9E00D2AC2F /* Activity.swift */; };
-		77AE9CD41A86FE9E00D2AC2F /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AE9CD01A86FE9E00D2AC2F /* ActivityViewController.swift */; };
 		77AE9CD51A86FE9E00D2AC2F /* australia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CD11A86FE9E00D2AC2F /* australia.jpg */; };
 		77AE9CD61A86FE9E00D2AC2F /* Australia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AE9CD21A86FE9E00D2AC2F /* Australia.swift */; };
 		77AE9CDF1A86FEB500D2AC2F /* brazil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CD71A86FEB500D2AC2F /* brazil.jpg */; };
@@ -60,6 +60,7 @@
 		7711CE041A7E815C005851A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7711CE051A7E815C005851A0 /* WorldVisitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldVisitorTests.swift; sourceTree = "<group>"; };
 		7740B6951A89AEAC00F6C8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77700E8B1A92E1EB00D7651C /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worldmap.jpg; sourceTree = "<group>"; };
 		77AE9CC31A86FB2500D2AC2F /* dice1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice1.png; sourceTree = "<group>"; };
 		77AE9CC41A86FB2500D2AC2F /* dice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice2.png; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		77AE9CC71A86FB2500D2AC2F /* dice5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice5.png; sourceTree = "<group>"; };
 		77AE9CC81A86FB2500D2AC2F /* dice6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice6.png; sourceTree = "<group>"; };
 		77AE9CCF1A86FE9E00D2AC2F /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		77AE9CD01A86FE9E00D2AC2F /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		77AE9CD11A86FE9E00D2AC2F /* australia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = australia.jpg; sourceTree = "<group>"; };
 		77AE9CD21A86FE9E00D2AC2F /* Australia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Australia.swift; sourceTree = "<group>"; };
 		77AE9CD71A86FEB500D2AC2F /* brazil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brazil.jpg; sourceTree = "<group>"; };
@@ -125,11 +125,11 @@
 		7711CDEC1A7E815C005851A0 /* WorldVisitor */ = {
 			isa = PBXGroup;
 			children = (
+				77AE9CCF1A86FE9E00D2AC2F /* Activity.swift */,
+				77700E8B1A92E1EB00D7651C /* ActivityViewController.swift */,
 				77AE9CED1A87014900D2AC2F /* Dice.swift */,
 				77AE9CE71A86FFEF00D2AC2F /* DiceRollViewController.swift */,
 				77AE9CDE1A86FEB500D2AC2F /* CountryViewController.swift */,
-				77AE9CCF1A86FE9E00D2AC2F /* Activity.swift */,
-				77AE9CD01A86FE9E00D2AC2F /* ActivityViewController.swift */,
 				7711CDEF1A7E815C005851A0 /* AppDelegate.swift */,
 				7740B6941A89AEAC00F6C8D3 /* Main.storyboard */,
 				7711CDF11A7E815C005851A0 /* ViewController.swift */,
@@ -329,7 +329,7 @@
 				7711CDF01A7E815C005851A0 /* AppDelegate.swift in Sources */,
 				77AE9CD61A86FE9E00D2AC2F /* Australia.swift in Sources */,
 				77AE9CE81A86FFEF00D2AC2F /* DiceRollViewController.swift in Sources */,
-				77AE9CD41A86FE9E00D2AC2F /* ActivityViewController.swift in Sources */,
+				77700E8C1A92E1EB00D7651C /* ActivityViewController.swift in Sources */,
 				77AE9CE01A86FEB500D2AC2F /* Brazil.swift in Sources */,
 				77AE9CE21A86FEB500D2AC2F /* Canada.swift in Sources */,
 				77AE9CEC1A87001E00D2AC2F /* India.swift in Sources */,

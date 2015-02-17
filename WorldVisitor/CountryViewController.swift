@@ -49,7 +49,6 @@ class CountryViewController: UIViewController
         
         //TODO select the activity to pass along to the Activity page
         
-        
         // Do any additional setup after loading the view.
     }
     
@@ -64,36 +63,53 @@ class CountryViewController: UIViewController
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         //the segue must be named as noted in the operator
-        if (segue.identifier == "toActivitySegue")
+        if (segue.identifier == "toActivitySegueFromSwipeRight")
         {
+            swipedRightAction()
             var cvc = segue.destinationViewController as ActivityViewController;
             cvc.incomingActivitySelected = selectedActivity
+        }
+        else if (segue.identifier == "toActivitySegueFromSwipeLeft")
+        {
+            swipedLeftAction()
+            var cvc = segue.destinationViewController as ActivityViewController;
+            cvc.incomingActivitySelected = selectedActivity
+        }
+        else if (segue.identifier == "toActivitySegueFromSwipeDown")
+        {
+            swipedDownAction()
+            var cvc = segue.destinationViewController as ActivityViewController;
+            cvc.incomingActivitySelected = selectedActivity
+        }
+        else
+        {
+            var cvc = segue.destinationViewController as ActivityViewController;
+            cvc.incomingActivitySelected = Activity()
         }
     }
     
     
-    
-    //TODO remove as part of cleanup
+
     func swipedRightAction(){
-        let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the right", preferredStyle: UIAlertControllerStyle.Alert)
-        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        self.presentViewController(tapAlert, animated: true, completion: nil)
+        //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the right", preferredStyle: UIAlertControllerStyle.Alert)
+        //tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
+        //self.presentViewController(tapAlert, animated: true, completion: nil)
         selectedActivity = (typeOfCountry as Country).getFirstActivity()
         
     }
     
     func swipedLeftAction(){
-        let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the left", preferredStyle: UIAlertControllerStyle.Alert)
-        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        self.presentViewController(tapAlert, animated: true, completion: nil)
+        //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the left", preferredStyle: UIAlertControllerStyle.Alert)
+        //tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
+        //self.presentViewController(tapAlert, animated: true, completion: nil)
         selectedActivity = (typeOfCountry as Country).getSecondActivity()
         
     }
     
     func swipedDownAction(){
-        let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the down", preferredStyle: UIAlertControllerStyle.Alert)
-        tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        self.presentViewController(tapAlert, animated: true, completion: nil)
+       //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the down", preferredStyle: UIAlertControllerStyle.Alert)
+       //tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
+        //self.presentViewController(tapAlert, animated: true, completion: nil)
         selectedActivity = (typeOfCountry as Country).getThirdActivity()
         
     }
