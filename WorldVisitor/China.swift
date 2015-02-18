@@ -17,7 +17,7 @@ class China : Country
         //initialize the parent class and then set the values
         super.init()
         firstActivity.setActivityName("Cook noodle soup")
-        secondActivity.setActivityName("Walk on the great wall")
+        secondActivity.setActivityName("Walk on the Great Wall")
         thirdActivity.setActivityName("Learn martial arts")
     }
     

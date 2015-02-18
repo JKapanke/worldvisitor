@@ -20,7 +20,6 @@ class DiceRollViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     //send them to the next view with the selected country by passing the country name as part of the seque
@@ -32,21 +31,12 @@ class DiceRollViewController: UIViewController
             var cvc = segue.destinationViewController as CountryViewController;
             
             cvc.typeOfCountry = countryRolled
-            
-            /*
-            cvc.dynamicLabel.text = countryRolled.getCountryName()
-            cvc.dynamicMap = countryRolled.getMapImage()
-            cvc.activityOneLabel.text = countryRolled.getFirstActivity().getActivityName()
-            cvc.activityTwoLabel.text = countryRolled.getSecondActivity().getActivityName()
-            cvc.activityThreeLabel.text = countryRolled.getThirdActivity().getActivityName()
-*/
         }
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
    
     @IBAction func rollButtonAction(sender: UIButton)
@@ -100,5 +90,4 @@ class DiceRollViewController: UIViewController
         }
         return determinedCountry
     }
-    
 }

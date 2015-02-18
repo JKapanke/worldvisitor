@@ -10,16 +10,18 @@ import UIKit
 
 class ActivityViewController: UIViewController
 {
-    var incomingActivitySelected: AnyObject!
     @IBOutlet weak var selectedActivityLabel: UILabel!
+ 
+    //from previous seque
+    var incomingActivitySelected: AnyObject!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        // Do any additional setup after loading the view.
         var selectedActivity = incomingActivitySelected as Activity
-        selectedActivityLabel.text = "You have selected to " + selectedActivity.getActivityName()
+        selectedActivityLabel.text = "You selected: " + selectedActivity.getActivityName()
     }
 
     override func didReceiveMemoryWarning()
@@ -27,7 +29,4 @@ class ActivityViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-
 }

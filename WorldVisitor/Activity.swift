@@ -22,5 +22,4 @@ class Activity
     {
         return activityName;
     }
-    
 }

@@ -44,12 +44,6 @@ class CountryViewController: UIViewController
         swipeRightGestureRecog.addTarget(self, action: "swipedRightAction")
         swipeLeftGestureRecog.addTarget(self, action: "swipedLeftAction")
         swipeDownGestureRecog.addTarget(self, action: "swipedDownAction")
-        //swipeRightGestureRecog.addGestureRecognizer(swipeRec)
-        //swipeRightGestureRecog.userInteractionEnabled = true
-        
-        //TODO select the activity to pass along to the Activity page
-        
-        // Do any additional setup after loading the view.
     }
     
     override func didReceiveMemoryWarning()
@@ -88,30 +82,19 @@ class CountryViewController: UIViewController
         }
     }
     
-    
-
-    func swipedRightAction(){
-        //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the right", preferredStyle: UIAlertControllerStyle.Alert)
-        //tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        //self.presentViewController(tapAlert, animated: true, completion: nil)
+    func swipedRightAction()
+    {
         selectedActivity = (typeOfCountry as Country).getFirstActivity()
-        
     }
     
-    func swipedLeftAction(){
-        //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the left", preferredStyle: UIAlertControllerStyle.Alert)
-        //tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        //self.presentViewController(tapAlert, animated: true, completion: nil)
+    func swipedLeftAction()
+    {
         selectedActivity = (typeOfCountry as Country).getSecondActivity()
-        
     }
     
-    func swipedDownAction(){
-       //let tapAlert = UIAlertController(title: "Swiped", message: "You just swiped to the down", preferredStyle: UIAlertControllerStyle.Alert)
-       //tapAlert.addAction(UIAlertAction(title: "OK", style: .Destructive, handler: nil))
-        //self.presentViewController(tapAlert, animated: true, completion: nil)
+    func swipedDownAction()
+    {
         selectedActivity = (typeOfCountry as Country).getThirdActivity()
-        
     }
 }
 
