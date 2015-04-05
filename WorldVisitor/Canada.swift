@@ -20,6 +20,13 @@ class Canada : Country
         firstActivity.setActivityName("Build a Fire")
         secondActivity.setActivityName("Ice fishing")
         thirdActivity.setActivityName("Track a bear")
+        
+        firstActivity.setActivitySoundFileName("Ka-Ching")
+        firstActivity.setActivitySoundFileExt("wav")
+        secondActivity.setActivitySoundFileName("Drip")
+        secondActivity.setActivitySoundFileExt("wav")
+        thirdActivity.setActivitySoundFileName("diceShake")
+        thirdActivity.setActivitySoundFileExt("wav")
     }
     
     override func getMapImage() -> UIImage

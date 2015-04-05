@@ -17,9 +17,19 @@ class Country
     
     init()
     {
-        firstActivity.setActivityName("UnknownActivty1")
-        secondActivity.setActivityName("UnknownActivty2")
-        thirdActivity.setActivityName("UnknownActivty3")
+        //default values for activity names
+        firstActivity.setActivityName("UnknownActivity1")
+        secondActivity.setActivityName("UnknownActivity2")
+        thirdActivity.setActivityName("UnknownActivity3")
+        
+        //default values for activity welcome sound
+        firstActivity.setActivitySoundFileName("diceShake")
+        firstActivity.setActivitySoundFileExt("wav")
+        secondActivity.setActivitySoundFileName("diceShake")
+        secondActivity.setActivitySoundFileExt("wav")
+        thirdActivity.setActivitySoundFileName("diceShake")
+        thirdActivity.setActivitySoundFileExt("wav")
+        
     }
     
     func getMapImage() -> UIImage

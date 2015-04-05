@@ -14,6 +14,11 @@ class Activity
 {
     var activityName = "unknownActivityName"
     var audioPlayer = AVAudioPlayer()
+    var soundURLFileName = "unknownSoundURLFileName"
+    var soundURLFileExt = "unknownSoundURLFileExt"
+    
+    //TODO
+    //Instead of dynamically setting these maybe read from a config file to setup each country
     
     func setActivityName(incomingActivityName: String)
     {
@@ -25,9 +30,29 @@ class Activity
         return activityName;
     }
     
-    func welcomeToActivitySound()
+    func setActivitySoundFileName(incomingActivitySoundFileName: String)
     {
-        let soundURL = NSBundle.mainBundle().URLForResource("diceShake", withExtension: "wav")
+        soundURLFileName = incomingActivitySoundFileName;
+    }
+    
+    func getActivitySoundFileName() -> String
+    {
+        return soundURLFileName;
+    }
+    
+    func setActivitySoundFileExt(incomingActivitySoundFileExt: String)
+    {
+        soundURLFileExt = incomingActivitySoundFileExt;
+    }
+    
+    func getActivitySoundFileExt() -> String
+    {
+        return soundURLFileExt;
+    }
+    
+    func playWelcomeToActivitySound()
+    {
+        let soundURL = NSBundle.mainBundle().URLForResource(getActivitySoundFileName(), withExtension: getActivitySoundFileExt())
         audioPlayer = AVAudioPlayer(contentsOfURL: soundURL, error: nil)
         audioPlayer.play()
     }
