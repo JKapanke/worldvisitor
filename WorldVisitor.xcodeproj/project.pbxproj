@@ -14,6 +14,7 @@
 		7711CE061A7E815C005851A0 /* WorldVisitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7711CE051A7E815C005851A0 /* WorldVisitorTests.swift */; };
 		7740B6961A89AEAC00F6C8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740B6941A89AEAC00F6C8D3 /* Main.storyboard */; };
 		77700E8C1A92E1EB00D7651C /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77700E8B1A92E1EB00D7651C /* ActivityViewController.swift */; };
+		7798167F1AD1EF2100C4B81D /* diceShake.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7798167E1AD1EF2100C4B81D /* diceShake.wav */; };
 		77AE9CC21A86F62B00D2AC2F /* worldmap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */; };
 		77AE9CC91A86FB2500D2AC2F /* dice1.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC31A86FB2500D2AC2F /* dice1.png */; };
 		77AE9CCA1A86FB2500D2AC2F /* dice2.png in Resources */ = {isa = PBXBuildFile; fileRef = 77AE9CC41A86FB2500D2AC2F /* dice2.png */; };
@@ -61,6 +62,7 @@
 		7711CE051A7E815C005851A0 /* WorldVisitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldVisitorTests.swift; sourceTree = "<group>"; };
 		7740B6951A89AEAC00F6C8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77700E8B1A92E1EB00D7651C /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		7798167E1AD1EF2100C4B81D /* diceShake.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = diceShake.wav; sourceTree = "<group>"; };
 		77AE9CC11A86F62B00D2AC2F /* worldmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worldmap.jpg; sourceTree = "<group>"; };
 		77AE9CC31A86FB2500D2AC2F /* dice1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice1.png; sourceTree = "<group>"; };
 		77AE9CC41A86FB2500D2AC2F /* dice2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dice2.png; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				7711CDF81A7E815C005851A0 /* LaunchScreen.xib */,
 				77AE9CF21A8704EE00D2AC2F /* countries */,
 				77AE9CC01A86F50D00D2AC2F /* images */,
+				7798167D1AD1EE4D00C4B81D /* sounds */,
 				7711CDED1A7E815C005851A0 /* Supporting Files */,
 			);
 			path = WorldVisitor;
@@ -165,6 +168,14 @@
 				7711CE041A7E815C005851A0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7798167D1AD1EE4D00C4B81D /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7798167E1AD1EF2100C4B81D /* diceShake.wav */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 		77AE9CC01A86F50D00D2AC2F /* images */ = {
@@ -295,6 +306,7 @@
 				77AE9CC21A86F62B00D2AC2F /* worldmap.jpg in Resources */,
 				7711CDFA1A7E815C005851A0 /* LaunchScreen.xib in Resources */,
 				77AE9CCC1A86FB2500D2AC2F /* dice4.png in Resources */,
+				7798167F1AD1EF2100C4B81D /* diceShake.wav in Resources */,
 				77AE9CE31A86FEB500D2AC2F /* china.jpg in Resources */,
 				7711CDF71A7E815C005851A0 /* Images.xcassets in Resources */,
 				77AE9CF11A8704D100D2AC2F /* diceShake.wav in Resources */,

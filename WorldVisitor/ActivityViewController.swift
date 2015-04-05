@@ -22,6 +22,8 @@ class ActivityViewController: UIViewController
         // Do any additional setup after loading the view.
         var selectedActivity = incomingActivitySelected as Activity
         selectedActivityLabel.text = "You selected: " + selectedActivity.getActivityName()
+        
+        selectedActivity.welcomeToActivitySound()
     }
 
     override func didReceiveMemoryWarning()

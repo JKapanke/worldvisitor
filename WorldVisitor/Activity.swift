@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import AVFoundation
 
 
 class Activity
 {
     var activityName = "unknownActivityName"
+    var audioPlayer = AVAudioPlayer()
     
     func setActivityName(incomingActivityName: String)
     {
@@ -21,5 +23,12 @@ class Activity
     func getActivityName() -> String
     {
         return activityName;
+    }
+    
+    func welcomeToActivitySound()
+    {
+        let soundURL = NSBundle.mainBundle().URLForResource("diceShake", withExtension: "wav")
+        audioPlayer = AVAudioPlayer(contentsOfURL: soundURL, error: nil)
+        audioPlayer.play()
     }
 }
