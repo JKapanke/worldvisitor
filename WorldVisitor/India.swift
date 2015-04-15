@@ -19,6 +19,13 @@ class India : Country
         firstActivity.setActivityName("Bhangra Dance")
         secondActivity.setActivityName("Make chai")
         thirdActivity.setActivityName("Ride a rickshaw")
+        
+        firstActivity.setActivitySoundFileName("Ka-Ching")
+        firstActivity.setActivitySoundFileExt("wav")
+        secondActivity.setActivitySoundFileName("Drip")
+        secondActivity.setActivitySoundFileExt("wav")
+        thirdActivity.setActivitySoundFileName("diceShake")
+        thirdActivity.setActivitySoundFileExt("wav")
     }
     
     override func getMapImage() -> UIImage

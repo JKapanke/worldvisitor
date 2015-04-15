@@ -19,6 +19,13 @@ class Australia : Country
         firstActivity.setActivityName("Play the didjeridoo")
         secondActivity.setActivityName("Go surfing")
         thirdActivity.setActivityName("Mine coal")
+        
+        firstActivity.setActivitySoundFileName("Ka-Ching")
+        firstActivity.setActivitySoundFileExt("wav")
+        secondActivity.setActivitySoundFileName("Drip")
+        secondActivity.setActivitySoundFileExt("wav")
+        thirdActivity.setActivitySoundFileName("diceShake")
+        thirdActivity.setActivitySoundFileExt("wav")
     }
     
     override func getMapImage() -> UIImage

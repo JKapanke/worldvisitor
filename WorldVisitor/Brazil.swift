@@ -19,6 +19,13 @@ class Brazil : Country
         firstActivity.setActivityName("Play volley ball")
         secondActivity.setActivityName("Learn Samba")
         thirdActivity.setActivityName("Go into the Amazon Jungle")
+        
+        firstActivity.setActivitySoundFileName("Ka-Ching")
+        firstActivity.setActivitySoundFileExt("wav")
+        secondActivity.setActivitySoundFileName("Drip")
+        secondActivity.setActivitySoundFileExt("wav")
+        thirdActivity.setActivitySoundFileName("diceShake")
+        thirdActivity.setActivitySoundFileExt("wav")
     }
     
     override func getMapImage() -> UIImage

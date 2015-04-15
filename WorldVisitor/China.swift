@@ -19,6 +19,13 @@ class China : Country
         firstActivity.setActivityName("Cook noodle soup")
         secondActivity.setActivityName("Walk on the Great Wall")
         thirdActivity.setActivityName("Learn martial arts")
+        
+        firstActivity.setActivitySoundFileName("Ka-Ching")
+        firstActivity.setActivitySoundFileExt("wav")
+        secondActivity.setActivitySoundFileName("Drip")
+        secondActivity.setActivitySoundFileExt("wav")
+        thirdActivity.setActivitySoundFileName("diceShake")
+        thirdActivity.setActivitySoundFileExt("wav")
     }
     
     override func getMapImage() -> UIImage
